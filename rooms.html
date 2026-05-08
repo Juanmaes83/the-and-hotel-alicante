@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rooms & Suites | THE & HOTEL Alicante</title>
+  <meta name="description" content="Explore the cinematic rooms and themed suites of THE & HOTEL Alicante: Pink Bath Suite, Mint Reading Nook, Mustard Parlour, Santa Bárbara Suite, Postiguet Blue and more." />
+  <link rel="canonical" href="https://juanmaes83.github.io/the-and-hotel-alicante/rooms.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <meta property="og:title" content="Rooms & Suites | THE & HOTEL Alicante" />
+  <meta property="og:description" content="Cinematic boutique rooms and themed Alicante suites designed as miniature hotel film sets." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juanmaes83.github.io/the-and-hotel-alicante/rooms.html" />
+  <meta property="og:image" content="https://juanmaes83.github.io/the-and-hotel-alicante/assets/images/suite-santa-barbara.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rooms & Suites | THE & HOTEL Alicante" />
+  <meta name="twitter:description" content="Explore cinematic boutique rooms and Alicante themed suites." />
+  <meta name="twitter:image" content="https://juanmaes83.github.io/the-and-hotel-alicante/assets/images/suite-santa-barbara.png" />
+
+  <meta name="theme-color" content="#2C3E6B" />
+
+  <style>
+    :root {
+      --cream: #FFF5E1;
+      --navy: #2C3E6B;
+      --pink: #F4B6C2;
+      --mint: #A8D5BA;
+      --mustard: #F2C94C;
+      --stone: #E8D5B7;
+      --terracotta: #C2785C;
+      --ink: #17213b;
+      --futura: Futura, "Avenir Next", "Trebuchet MS", Arial, sans-serif;
+      --mono: "Courier New", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--mono);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 18px;
+      border-bottom: 3px solid var(--navy);
+      background: rgba(255,245,225,.92);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand,
+    .button,
+    h1,
+    h2,
+    h3 {
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-weight: 900;
+    }
+
+    .brand { font-size: clamp(14px, 3vw, 22px); }
+
+    .button {
+      display: inline-block;
+      border: 3px solid var(--navy);
+      background: rgba(255,245,225,.72);
+      padding: 11px 15px;
+      box-shadow: 5px 5px 0 var(--navy);
+      font-size: 12px;
+    }
+
+    .hero {
+      min-height: 72vh;
+      display: grid;
+      place-items: center;
+      padding: 90px 18px 70px;
+      text-align: center;
+      background:
+        linear-gradient(rgba(44,62,107,.15), rgba(44,62,107,.45)),
+        url("assets/images/suite-santa-barbara.png") center / cover no-repeat;
+      border-bottom: 4px solid var(--navy);
+    }
+
+    .hero-card {
+      width: min(820px, 100%);
+      padding: clamp(22px, 5vw, 56px);
+      border: 4px solid var(--navy);
+      background: rgba(255,245,225,.66);
+      box-shadow: 12px 12px 0 rgba(44,62,107,.18);
+    }
+
+    .kicker {
+      margin: 0 0 12px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: #7b3f2d;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(46px, 10vw, 118px);
+      line-height: .88;
+      color: var(--navy);
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 18px auto 0;
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: clamp(56px, 9vw, 110px) max(18px, calc((100vw - 1180px) / 2));
+    }
+
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 7vw, 78px);
+      line-height: .92;
+      color: var(--navy);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      border: 3px solid var(--navy);
+      background: rgba(255,245,225,.72);
+      box-shadow: 10px 10px 0 rgba(44,62,107,.16);
+      overflow: hidden;
+    }
+
+    .media {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      background: var(--stone);
+      border-bottom: 3px solid var(--navy);
+    }
+
+    .copy {
+      padding: 18px;
+    }
+
+    .copy h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      color: var(--navy);
+    }
+
+    .copy p {
+      margin: 0 0 14px;
+      line-height: 1.55;
+    }
+
+    .meta {
+      display: grid;
+      gap: 8px;
+      margin: 14px 0;
+    }
+
+    .meta span {
+      border: 2px solid var(--navy);
+      background: rgba(255,255,255,.55);
+      padding: 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 42px 18px;
+      text-align: center;
+      background: var(--navy);
+      color: var(--cream);
+    }
+
+    .footer a {
+      color: var(--cream);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .button { width: 100%; text-align: center; }
+      .hero { min-height: 68vh; padding-top: 74px; }
+      .hero-card { background: rgba(255,245,225,.72); }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Rooms & Suites | THE & HOTEL Alicante",
+    "url": "https://juanmaes83.github.io/the-and-hotel-alicante/rooms.html",
+    "description": "Collection page for the rooms and themed suites of THE & HOTEL Alicante.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "THE & HOTEL Alicante",
+      "url": "https://juanmaes83.github.io/the-and-hotel-alicante/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">THE & HOTEL · Alicante</a>
+    <nav>
+      <a class="button" href="index.html#book">Reserve Key</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <p class="kicker">Chapter · Rooms & Suites</p>
+        <h1>Rooms<br>& Suites</h1>
+        <p class="intro">A cinematic collection of boutique rooms and Alicante themed suites: designed as small film sets, built for direct booking, and supervised by Carlos.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="kicker">Boutique Rooms</p>
+        <h2>Three rooms. Three rituals.</h2>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <video class="media" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/videos/room-bed-stopmotion.mp4" type="video/mp4">
+          </video>
+          <div class="copy">
+            <h3>Pink Bath Suite</h3>
+            <p>For ceremonial sleepers, towel collectors and guests who respect folded cotton.</p>
+            <div class="meta"><span>2 guests</span><span>28 m²</span><span>From 180€/night</span></div>
+            <a class="button" href="index.html#book">Request this room</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <video class="media" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/videos/room-curtains.mp4" type="video/mp4">
+          </video>
+          <div class="copy">
+            <h3>Mint Reading Nook</h3>
+            <p>For quiet guests, secret notes and cats with literary standards.</p>
+            <div class="meta"><span>2 guests</span><span>32 m²</span><span>From 210€/night</span></div>
+            <a class="button" href="index.html#book">Request this room</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <video class="media" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/videos/room-record-player.mp4" type="video/mp4">
+          </video>
+          <div class="copy">
+            <h3>Mustard Parlour</h3>
+            <p>For breakfast cake, late checkouts and gramophone confidence.</p>
+            <div class="meta"><span>3 guests</span><span>42 m²</span><span>From 260€/night</span></div>
+            <a class="button" href="index.html#book">Request this room</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="kicker">Alicante Theme Suites</p>
+        <h2>The city folded into rooms.</h2>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <img class="media" src="assets/images/suite-santa-barbara.png" alt="Santa Bárbara Suite" loading="lazy">
+          <div class="copy">
+            <h3>Santa Bárbara Suite</h3>
+            <p>Stone, height and ceremonial morning light inspired by Alicante’s hilltop fortress.</p>
+            <div class="meta"><span>Fortress mood</span><span>Sunrise tray</span><span>Premium suite</span></div>
+            <a class="button" href="index.html#book">Request this suite</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media" src="assets/images/suite-postiguet-blue.png" alt="Postiguet Blue Suite" loading="lazy">
+          <div class="copy">
+            <h3>Postiguet Blue</h3>
+            <p>Mediterranean blue, cream linen and slow traveller balcony philosophy.</p>
+            <div class="meta"><span>Sea mood</span><span>Blue-hour ritual</span><span>Premium suite</span></div>
+            <a class="button" href="index.html#book">Request this suite</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="media" src="assets/images/suite-barrio-deluxe.png" alt="Barrio Deluxe Suite" loading="lazy">
+          <div class="copy">
+            <h3>Barrio Deluxe</h3>
+            <p>Terracotta rhythm, balcony gossip and old town shadows.</p>
+            <div class="meta"><span>Old town mood</span><span>Balcony scene</span><span>Premium suite</span></div>
+            <a class="button" href="index.html#book">Request this suite</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© THE & HOTEL Alicante · <a href="index.html">Back to main landing</a></p>
+  </footer>
+</body>
+</html>

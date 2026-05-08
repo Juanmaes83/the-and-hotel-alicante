@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Guest Book · THE & HOTEL Alicante</title>
+  <meta name="description" content="Digital guest book for THE & HOTEL Alicante: postcards, fictional reviews, social proof and the live writing ritual." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://juanmaes83.github.io/the-and-hotel-alicante/guestbook.html" />
+
+  <meta property="og:title" content="Guest Book · THE & HOTEL Alicante" />
+  <meta property="og:description" content="Four postcards from guests who claim the wallpaper remembered them. Social proof, but with better stationery." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juanmaes83.github.io/the-and-hotel-alicante/guestbook.html" />
+  <meta property="og:image" content="https://juanmaes83.github.io/the-and-hotel-alicante/assets/images/gallery-frame-01.png" />
+  <meta name="theme-color" content="#2C3E6B" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "THE & HOTEL Alicante Staff",
+    "description": "Cinematic staff portraits for THE & HOTEL Alicante.",
+    "url": "https://juanmaes83.github.io/the-and-hotel-alicante/guestbook.html",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Carlos" },
+      { "@type": "ListItem", "position": 2, "name": "Miss Elodie" },
+      { "@type": "ListItem", "position": 3, "name": "Mr. Basil" },
+      { "@type": "ListItem", "position": 4, "name": "Chef Colette" }
+    ]
+  }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+    :root {
+      --cream: #FFF5E1;
+      --navy: #2C3E6B;
+      --pink: #F4B6C2;
+      --mint: #A8D5BA;
+      --mustard: #F2C94C;
+      --stone: #E8D5B7;
+      --blue: #4A90D9;
+      --terracotta: #C2785C;
+      --white: #FAF7F2;
+      --ink: #17213b;
+      --red: #b84b42;
+      --mahogany: #7b3f2d;
+      --futura: Futura, "Avenir Next", "Trebuchet MS", Arial, sans-serif;
+      --courier: "Courier Prime", "Courier New", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 86px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--courier);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    video {
+      display: block;
+      max-width: 100%;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom: 3px solid var(--navy);
+      background: rgba(255,245,225,.94);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      min-width: 0;
+      font-family: var(--futura);
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: clamp(14px, 4vw, 22px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .button {
+      display: inline-block;
+      width: 100%;
+      border: 3px solid var(--navy);
+      background: var(--cream);
+      color: var(--navy);
+      padding: 12px 16px;
+      font-family: var(--futura);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      box-shadow: 5px 5px 0 var(--navy);
+      text-align: center;
+    }
+
+    .button.primary {
+      background: var(--mustard);
+    }
+
+    .hero {
+      min-height: 76svh;
+      display: grid;
+      align-items: end;
+      padding: 86px 16px 42px;
+      background:
+        linear-gradient(180deg, rgba(44,62,107,.08), rgba(44,62,107,.70)),
+        var(--pink);
+      border-bottom: 4px solid var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(255,245,225,.55), transparent 26%),
+        radial-gradient(circle at 78% 18%, rgba(242,201,76,.50), transparent 22%),
+        repeating-linear-gradient(90deg, rgba(44,62,107,.12) 0 3px, transparent 3px 72px);
+      opacity: .9;
+    }
+
+    .hero-card {
+      position: relative;
+      width: min(980px, 100%);
+      margin: 0 auto;
+      padding: clamp(22px, 5vw, 48px);
+      border: 4px solid var(--navy);
+      background: rgba(255,245,225,.88);
+      box-shadow: 12px 12px 0 rgba(44,62,107,.22);
+      text-align: center;
+    }
+
+    .kicker {
+      margin: 0 0 10px;
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .045em;
+      color: var(--navy);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(46px, 15vw, 118px);
+      line-height: .82;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 10vw, 76px);
+      line-height: .92;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: clamp(25px, 7vw, 42px);
+      line-height: .92;
+    }
+
+    .hero-card p:last-of-type,
+    .section-head p {
+      max-width: 780px;
+      margin: 16px auto 0;
+      font-size: clamp(14px, 4vw, 18px);
+      line-height: 1.58;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: clamp(52px, 10vw, 96px) 16px;
+    }
+
+    .section-head {
+      width: min(940px, 100%);
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .staff-grid {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .staff-card {
+      border: 3px solid var(--navy);
+      background: rgba(255,245,225,.94);
+      box-shadow: 8px 8px 0 rgba(44,62,107,.16);
+      overflow: hidden;
+      display: grid;
+    }
+
+    .portrait-window {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-bottom: 3px solid var(--navy);
+      background: var(--mint);
+      overflow: hidden;
+    }
+
+    .portrait-window video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .portrait-window::after {
+      content: "STAFF LOOP";
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      z-index: 3;
+      border: 2px solid var(--navy);
+      background: var(--mustard);
+      color: var(--navy);
+      padding: 7px 9px;
+      font: 900 10px/1 var(--futura);
+      letter-spacing: .08em;
+    }
+
+    .staff-copy {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .staff-copy p {
+      margin: 0;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .meta-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .meta-grid span {
+      border: 2px solid var(--navy);
+      background: #fff9ea;
+      padding: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.35;
+      box-shadow: 3px 3px 0 rgba(44,62,107,.12);
+    }
+
+    .protocol {
+      background: var(--navy);
+      color: var(--cream);
+      border-top: 4px solid var(--mustard);
+      border-bottom: 4px solid var(--mustard);
+    }
+
+    .protocol h2 {
+      color: var(--cream);
+    }
+
+    .protocol-grid {
+      width: min(1180px, 100%);
+      margin: 32px auto 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .protocol-card {
+      border: 2px solid var(--cream);
+      background: rgba(255,245,225,.08);
+      padding: 16px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    .protocol-card strong {
+      display: block;
+      color: var(--mustard);
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 6px;
+    }
+
+    .cta {
+      background: linear-gradient(180deg, var(--cream), #fff1c5);
+      text-align: center;
+    }
+
+    .cta p {
+      max-width: 720px;
+      margin: 16px auto 24px;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 34px 16px 100px;
+      background: var(--cream);
+      color: var(--navy);
+      text-align: center;
+      border-top: 3px solid var(--navy);
+    }
+
+    .footer strong {
+      display: block;
+      font-family: var(--futura);
+      font-size: clamp(30px, 9vw, 70px);
+      line-height: .9;
+      letter-spacing: .06em;
+    }
+
+    .footer-actions {
+      margin-top: 22px;
+      display: grid;
+      gap: 12px;
+      width: min(520px, 100%);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 760px) {
+      .topbar {
+        padding: 14px 28px;
+      }
+
+      .hero {
+        min-height: 82vh;
+        padding: 110px 28px 70px;
+      }
+
+      .staff-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .staff-copy {
+        padding: 22px;
+      }
+
+      .protocol-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .footer-actions {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1120px) {
+      .staff-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .portrait-window {
+        aspect-ratio: 3 / 4;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">THE & HOTEL · Alicante</a>
+    <a class="button primary" href="index.html#book">Book</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <p class="kicker">Chapter X · Digital Guest Book</p>
+        <h1>Guest Book</h1>
+        <p>Four postcards from guests who claim the wallpaper remembered them. Social proof, but with better stationery.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="kicker">Postcards & Proof</p>
+        <h2>Guests wrote it down.</h2>
+        <p>A testimonial page designed as a cinematic proof layer: reviews, character, emotional memory and direct booking reinforcement.</p>
+      </div>
+
+      <div class="staff-grid">
+        <article class="staff-card">
+          <div class="portrait-window">
+            <video autoplay muted loop playsinline preload="metadata" aria-label="Looping staff portrait video of Carlos">
+              <source src="assets/videos/staff-carlos.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="staff-copy">
+            <h3>Carlos</h3>
+            <p>The guardian of symmetry. Bows at exactly 15 degrees and knows which corridor should find you.</p>
+            <div class="meta-grid">
+              <span>Role: Head Bellhop</span>
+              <span>Signature ritual: key alignment</span>
+              <span>Best at: quiet corridor control</span>
+            </div>
+            <a class="button" href="index.html#book">Request Carlos protocol</a>
+          </div>
+        </article>
+
+        <article class="staff-card">
+          <div class="portrait-window">
+            <video autoplay muted loop playsinline preload="metadata" aria-label="Looping staff portrait video adjusting glasses">
+              <source src="assets/videos/staff-glasses.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="staff-copy">
+            <h3>Miss Elodie</h3>
+            <p>Adjusts glasses. Solves mysteries in ledger form. Never loses a booking, only morally relocates it.</p>
+            <div class="meta-grid">
+              <span>Role: Front Desk Intelligence</span>
+              <span>Signature ritual: ledger correction</span>
+              <span>Best at: elegant certainty</span>
+            </div>
+            <a class="button" href="index.html#book">Request front desk ritual</a>
+          </div>
+        </article>
+
+        <article class="staff-card">
+          <div class="portrait-window">
+            <video autoplay muted loop playsinline preload="metadata" aria-label="Looping staff portrait video stamping a passport">
+              <source src="assets/videos/staff-passport.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="staff-copy">
+            <h3>Mr. Basil</h3>
+            <p>Stamps passports with alarming rhythmic accuracy. Turns arrival into paperwork with theatre.</p>
+            <div class="meta-grid">
+              <span>Role: Arrival Formalities</span>
+              <span>Signature ritual: passport stamp</span>
+              <span>Best at: ceremonial bureaucracy</span>
+            </div>
+            <a class="button" href="index.html#book">Request arrival protocol</a>
+          </div>
+        </article>
+
+        <article class="staff-card">
+          <div class="portrait-window">
+            <video autoplay muted loop playsinline preload="metadata" aria-label="Looping staff portrait video folding a napkin">
+              <source src="assets/videos/staff-napkin.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="staff-copy">
+            <h3>Chef Colette</h3>
+            <p>Folds napkins into small edible philosophies. Treats breakfast like an architectural brief.</p>
+            <div class="meta-grid">
+              <span>Role: Culinary Discipline</span>
+              <span>Signature ritual: napkin fold</span>
+              <span>Best at: breakfast geometry</span>
+            </div>
+            <a class="button" href="index.html#book">Request breakfast ritual</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+      <div style="width:min(1180px,100%);margin:42px auto 0;position:relative;min-height:420px;border:4px solid var(--navy);overflow:hidden;background:#fff9ea;box-shadow:12px 12px 0 rgba(44,62,107,.18);display:grid;place-items:center;isolation:isolate;">
+        <video autoplay muted loop playsinline preload="metadata" aria-label="Looping video of handwriting in the guest book" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+          <source src="assets/videos/guestbook-writing.mp4" type="video/mp4">
+        </video>
+        <div style="position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(255,249,234,.12),rgba(44,62,107,.42));pointer-events:none;"></div>
+        <div style="position:relative;z-index:3;width:min(620px,calc(100% - 32px));border:3px solid var(--navy);background:rgba(255,245,225,.90);padding:clamp(18px,4vw,30px);box-shadow:10px 10px 0 rgba(44,62,107,.18);text-align:center;">
+          <p class="kicker">Live Guest Book</p>
+          <h2>The pen keeps moving.</h2>
+          <p>Every review becomes part of the hotel mythology. Carefully written. Slightly suspicious. Very useful.</p>
+        </div>
+      </div>
+    <section class="section protocol">
+      <div class="section-head">
+        <p class="kicker">Service Protocol</p>
+        <h2>Why this page matters.</h2>
+        <p>Guest proof is not decoration. It reduces doubt, increases memorability and gives the direct booking story more weight.</p>
+      </div>
+
+      <div class="protocol-grid">
+        <div class="protocol-card">
+          <strong>01 · Recognition</strong>
+          Guests remember faces faster than amenities.
+        </div>
+        <div class="protocol-card">
+          <strong>02 · Ritual</strong>
+          Every staff action becomes a visual story.
+        </div>
+        <div class="protocol-card">
+          <strong>03 · Trust</strong>
+          Carlos turns direct booking into a human gesture.
+        </div>
+        <div class="protocol-card">
+          <strong>04 · Content</strong>
+          Staff loops become reusable social and campaign assets.
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <p class="kicker">Final Staff Bell</p>
+      <h2>Write your own scene.</h2>
+      <p>The booking form lives on the main landing so every room, suite, experience, event and guest request stays centralized.</p>
+      <a class="button primary" href="index.html#book">Request your key</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>THE & HOTEL</strong>
+    <p>Alicante · Where Symmetry Is Policy</p>
+    <div class="footer-actions">
+      <a class="button" href="index.html">Back to main landing</a>
+      <a class="button primary" href="index.html#book">Request a key</a>
+    </div>
+  </footer>
+</body>
+</html>
+
+

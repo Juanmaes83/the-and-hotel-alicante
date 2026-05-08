@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Packages · THE & HOTEL Alicante</title>
+  <meta name="description" content="Symmetry Packages at THE & HOTEL Alicante: arrival ritual, Alicante weekend, cake and cinema ritual, and private event protocol." />
+  <link rel="canonical" href="https://juanmaes83.github.io/the-and-hotel-alicante/packages.html" />
+
+  <meta property="og:title" content="Packages · THE & HOTEL Alicante" />
+  <meta property="og:description" content="Reserve more than a room: reserve an arrival, a weekend, a ritual or a private event protocol." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juanmaes83.github.io/the-and-hotel-alicante/packages.html" />
+
+  <meta name="theme-color" content="#2C3E6B" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "name": "THE & HOTEL Alicante Packages",
+    "url": "https://juanmaes83.github.io/the-and-hotel-alicante/packages.html",
+    "itemListElement": [
+      { "@type": "Offer", "name": "The Arrival Package", "priceCurrency": "EUR", "price": "320" },
+      { "@type": "Offer", "name": "The Alicante Weekend", "priceCurrency": "EUR", "price": "620" },
+      { "@type": "Offer", "name": "The Cake & Cinema Ritual", "priceCurrency": "EUR", "price": "460" },
+      { "@type": "Offer", "name": "The Private Event Protocol", "priceCurrency": "EUR", "price": "1900" }
+    ]
+  }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+    :root {
+      --cream: #FFF5E1;
+      --navy: #2C3E6B;
+      --pink: #F4B6C2;
+      --mint: #A8D5BA;
+      --mustard: #F2C94C;
+      --stone: #E8D5B7;
+      --blue: #4A90D9;
+      --terracotta: #C2785C;
+      --white: #FAF7F2;
+      --ink: #17213b;
+      --red: #b84b42;
+      --futura: Futura, "Avenir Next", "Trebuchet MS", Arial, sans-serif;
+      --courier: "Courier Prime", "Courier New", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--courier);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom: 3px solid var(--navy);
+      background: rgba(255, 245, 225, .94);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      font-family: var(--futura);
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: clamp(14px, 4vw, 22px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .button {
+      display: inline-block;
+      width: 100%;
+      border: 3px solid var(--navy);
+      background: var(--cream);
+      color: var(--navy);
+      padding: 12px 16px;
+      font-family: var(--futura);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      box-shadow: 5px 5px 0 var(--navy);
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      background: var(--mustard);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 74svh;
+      display: grid;
+      align-items: end;
+      padding: 84px 16px 42px;
+      background:
+        linear-gradient(135deg, rgba(255,245,225,.86), rgba(232,213,183,.76)),
+        radial-gradient(circle at 18% 22%, var(--pink) 0 90px, transparent 92px),
+        radial-gradient(circle at 82% 18%, var(--mint) 0 100px, transparent 102px),
+        radial-gradient(circle at 52% 82%, var(--mustard) 0 120px, transparent 122px),
+        var(--stone);
+      border-bottom: 4px solid var(--navy);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 22px;
+      border: 4px solid rgba(44,62,107,.78);
+      pointer-events: none;
+    }
+
+    .hero-card {
+      position: relative;
+      z-index: 2;
+      width: min(900px, 100%);
+      margin: 0 auto;
+      padding: clamp(22px, 5vw, 48px);
+      border: 4px solid var(--navy);
+      background: rgba(255,245,225,.74);
+      box-shadow: 12px 12px 0 rgba(44,62,107,.20);
+      text-align: center;
+    }
+
+    .kicker {
+      margin: 0 0 10px;
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .045em;
+      color: var(--navy);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 14vw, 110px);
+      line-height: .82;
+    }
+
+    .hero-card p:last-of-type {
+      max-width: 700px;
+      margin: 18px auto 0;
+      font-size: clamp(14px, 4vw, 18px);
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: clamp(52px, 10vw, 96px) 16px;
+    }
+
+    .section-head {
+      width: min(900px, 100%);
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 10vw, 76px);
+      line-height: .92;
+    }
+
+    .section-head p {
+      max-width: 760px;
+      margin: 14px auto 0;
+      line-height: 1.6;
+    }
+
+    .package-grid {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    .package-card {
+      position: relative;
+      display: grid;
+      gap: 14px;
+      border: 3px solid var(--navy);
+      background: rgba(255,245,225,.82);
+      padding: 20px;
+      box-shadow: 8px 8px 0 rgba(44,62,107,.16);
+      overflow: hidden;
+    }
+
+    .package-card::before {
+      content: attr(data-no);
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border: 3px solid var(--navy);
+      border-radius: 50%;
+      background: var(--mustard);
+      font: 900 18px/1 var(--futura);
+      color: var(--navy);
+    }
+
+    .package-card h3 {
+      margin: 0;
+      font-size: clamp(26px, 7vw, 40px);
+      line-height: .92;
+    }
+
+    .package-card p {
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .price {
+      color: var(--red);
+      font: 900 clamp(28px, 8vw, 42px)/1 var(--futura);
+      border-top: 3px solid var(--navy);
+      border-bottom: 3px solid var(--navy);
+      padding: 12px 0;
+    }
+
+    .details {
+      display: grid;
+      gap: 10px;
+    }
+
+    .detail {
+      border: 2px solid var(--navy);
+      background: rgba(255,249,234,.88);
+      padding: 12px;
+      box-shadow: 4px 4px 0 rgba(44,62,107,.12);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .detail strong {
+      display: block;
+      margin-bottom: 4px;
+      font-family: var(--futura);
+      text-transform: uppercase;
+      color: var(--red);
+      font-size: 12px;
+    }
+
+    .package-list {
+      margin: 0;
+      padding-left: 20px;
+      line-height: 1.65;
+    }
+
+    .compare {
+      width: min(1180px, 100%);
+      margin: 42px auto 0;
+      border: 3px solid var(--navy);
+      background: #fff9ea;
+      box-shadow: 8px 8px 0 rgba(44,62,107,.16);
+      overflow: hidden;
+    }
+
+    .compare-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      border-bottom: 2px solid var(--navy);
+    }
+
+    .compare-row:last-child {
+      border-bottom: 0;
+    }
+
+    .compare-cell {
+      padding: 14px;
+      border-bottom: 1px dashed rgba(44,62,107,.45);
+      line-height: 1.45;
+    }
+
+    .compare-cell:last-child {
+      border-bottom: 0;
+    }
+
+    .compare-head {
+      background: var(--navy);
+      color: var(--cream);
+      font-family: var(--futura);
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: .06em;
+    }
+
+    .cta {
+      background: var(--navy);
+      color: var(--cream);
+      text-align: center;
+      border-top: 4px solid var(--mustard);
+    }
+
+    .cta h2 {
+      color: var(--cream);
+    }
+
+    .cta p {
+      max-width: 720px;
+      margin: 16px auto 24px;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 34px 16px 100px;
+      background: var(--cream);
+      color: var(--navy);
+      text-align: center;
+      border-top: 3px solid var(--navy);
+    }
+
+    .footer strong {
+      display: block;
+      font-family: var(--futura);
+      font-size: clamp(30px, 9vw, 70px);
+      line-height: .9;
+      letter-spacing: .06em;
+    }
+
+    .footer-actions {
+      margin-top: 22px;
+      display: grid;
+      gap: 12px;
+      width: min(480px, 100%);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 760px) {
+      .topbar {
+        padding: 14px 28px;
+      }
+
+      .hero {
+        min-height: 82vh;
+        padding: 110px 28px 70px;
+      }
+
+      .package-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .compare-row {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .compare-cell {
+        border-bottom: 0;
+        border-right: 1px dashed rgba(44,62,107,.45);
+      }
+
+      .compare-cell:last-child {
+        border-right: 0;
+      }
+
+      .footer-actions {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1120px) {
+      .package-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .package-card {
+        min-height: 540px;
+      }
+
+      .details {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">THE & HOTEL · Alicante</a>
+    <a class="button primary" href="index.html#book">Book</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <p class="kicker">Chapter III · Commercial Rituals</p>
+        <h1>Packages</h1>
+        <p>Reserve more than a room: reserve an arrival, a weekend, a cake ritual or a private event protocol.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="kicker">The Symmetry Packages</p>
+        <h2>Four ways to stay longer.</h2>
+        <p>Packages are designed as clear booking products: easy to understand, easy to request and flexible enough to convert different types of guests.</p>
+      </div>
+
+      <div class="package-grid">
+        <article class="package-card" data-no="01">
+          <h3>The Arrival Package</h3>
+          <p>A choreographed first night for guests who enjoy entrances, reception rituals and a clean story from the first minute.</p>
+          <div class="price">From 320€</div>
+          <div class="details">
+            <div class="detail"><strong>Duration</strong>1 night · 1 welcome ritual</div>
+            <div class="detail"><strong>Best for</strong>First-time guests and short romantic stays.</div>
+          </div>
+          <ul class="package-list">
+            <li>Welcome telegram</li>
+            <li>Breakfast cake</li>
+            <li>Carlos corridor escort</li>
+            <li>Priority room alignment</li>
+          </ul>
+          <a class="button" href="index.html#book">Request package</a>
+        </article>
+
+        <article class="package-card" data-no="02">
+          <h3>The Alicante Weekend</h3>
+          <p>Castle, Explanada, market breakfast and two nights of recovery with enough local colour to justify the suitcase.</p>
+          <div class="price">From 620€</div>
+          <div class="details">
+            <div class="detail"><strong>Duration</strong>2 nights · local route included</div>
+            <div class="detail"><strong>Best for</strong>Couples, city-break travellers and cultural guests.</div>
+          </div>
+          <ul class="package-list">
+            <li>Santa Bárbara morning route</li>
+            <li>Postiguet blue-hour guide</li>
+            <li>Market breakfast protocol</li>
+            <li>Late checkout request</li>
+          </ul>
+          <a class="button" href="index.html#book">Request package</a>
+        </article>
+
+        <article class="package-card" data-no="03">
+          <h3>The Cake & Cinema Ritual</h3>
+          <p>A private screening mood, cake service and a room that behaves like a tiny film set with very good manners.</p>
+          <div class="price">From 460€</div>
+          <div class="details">
+            <div class="detail"><strong>Duration</strong>1 night · evening ritual</div>
+            <div class="detail"><strong>Best for</strong>Anniversaries, birthdays and dramatic snack people.</div>
+          </div>
+          <ul class="package-list">
+            <li>Pizzicato Bar aperitif</li>
+            <li>Private cake trolley</li>
+            <li>Record player selection</li>
+            <li>Postcard ritual</li>
+          </ul>
+          <a class="button" href="index.html#book">Request package</a>
+        </article>
+
+        <article class="package-card" data-no="04">
+          <h3>The Private Event Protocol</h3>
+          <p>For launches, dinners, shootings and secret applause with concierge discipline and controlled hotel energy.</p>
+          <div class="price">From 1,900€</div>
+          <div class="details">
+            <div class="detail"><strong>Duration</strong>Half day · private team</div>
+            <div class="detail"><strong>Best for</strong>Brands, small events, editorial shoots and private dinners.</div>
+          </div>
+          <ul class="package-list">
+            <li>Private concierge</li>
+            <li>Catering coordination</li>
+            <li>Room block options</li>
+            <li>Arrival timing protocol</li>
+          </ul>
+          <a class="button" href="index.html#book">Request package</a>
+        </article>
+      </div>
+
+      <div class="compare">
+        <div class="compare-row compare-head">
+          <div class="compare-cell">Package</div>
+          <div class="compare-cell">Guest Intent</div>
+          <div class="compare-cell">Conversion Hook</div>
+          <div class="compare-cell">Price Anchor</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Arrival Package</div>
+          <div class="compare-cell">Short stay</div>
+          <div class="compare-cell">Welcome ritual + cake</div>
+          <div class="compare-cell">Entry offer</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Alicante Weekend</div>
+          <div class="compare-cell">Destination trip</div>
+          <div class="compare-cell">Local route included</div>
+          <div class="compare-cell">Core upsell</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Cake & Cinema</div>
+          <div class="compare-cell">Occasion</div>
+          <div class="compare-cell">Emotional ritual</div>
+          <div class="compare-cell">Premium night</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Private Event</div>
+          <div class="compare-cell">B2B / groups</div>
+          <div class="compare-cell">Protocol + coordination</div>
+          <div class="compare-cell">High-ticket</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <p class="kicker">Final Reception Bell</p>
+      <h2>Choose the package. Carlos handles the suspense.</h2>
+      <p>The booking form lives on the main landing so the conversion flow stays centralized and easy to maintain.</p>
+      <a class="button primary" href="index.html#book">Request a package</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>THE & HOTEL</strong>
+    <p>Alicante · Where Symmetry Is Policy</p>
+    <div class="footer-actions">
+      <a class="button" href="index.html">Back to main landing</a>
+      <a class="button primary" href="index.html#book">Request a key</a>
+    </div>
+  </footer>
+</body>
+</html>

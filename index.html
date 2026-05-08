@@ -2520,6 +2520,17 @@
 }
 
 /* ===== END PATCH UX FINAL V5 ===== */
+    .form-warning {
+      margin-top: 14px;
+      color: #7a3f00;
+      background: rgba(242, 201, 76, .18);
+      border: 1px solid rgba(122, 63, 0, .24);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
 </style>
 </head>
 <body>
@@ -3369,14 +3380,48 @@
     function ding() { playTone(880, 1320, .3); }
     function projectorClick() { playTone(220, 260, .12); }
     function postalStamp() { playTone(520, 330, .16); }
-    if (form) {
+        if (form) {
       form.addEventListener('submit', event => {
         event.preventDefault();
-        if (bell) { bell.classList.remove('ring'); void bell.offsetWidth; bell.classList.add('ring'); }
+
+        const lang = document.documentElement.lang === 'es' ? 'es' : 'en';
+        const arrivalValue = arrivalDate ? arrivalDate.value : '';
+        const departureValue = departureDate ? departureDate.value : '';
+
+        if (!arrivalValue || !departureValue) {
+          if (note) {
+            note.className = 'form-warning';
+            note.textContent = lang === 'es'
+              ? 'Seleccione fecha de llegada y salida para preparar la solicitud.'
+              : 'Please select arrival and departure dates to prepare the request.';
+          }
+          return;
+        }
+
+        if (new Date(departureValue) <= new Date(arrivalValue)) {
+          if (note) {
+            note.className = 'form-warning';
+            note.textContent = lang === 'es'
+              ? 'La fecha de salida debe ser posterior a la fecha de llegada.'
+              : 'Departure date must be later than arrival date.';
+          }
+          return;
+        }
+
+        if (bell) {
+          bell.classList.remove('ring');
+          void bell.offsetWidth;
+          bell.classList.add('ring');
+        }
+
         ding();
+        updateBookingSummary();
+
         if (note) {
           note.className = 'success-telegram';
-          note.textContent = document.documentElement.lang === 'es' ? 'Telegrama enviado. Carlos ha recibido su solicitud, el resumen ha sido archivado y una respuesta perfectamente doblada llegarÃ¡ en breve.' : 'Telegram sent. Carlos has received your request, the summary has been archived and a perfectly folded reply will arrive shortly.';
+          note.textContent = lang === 'es'
+            ? 'Solicitud preparada. Para producción, este formulario debe conectarse al sistema oficial de reservas antes de aceptar solicitudes reales.'
+            : 'Request prepared. For production, this form must be connected to the official booking system before accepting real requests.';
         }
       });
     }
@@ -3416,6 +3461,7 @@
   </script>
 </body>
 </html>
+
 
 
 

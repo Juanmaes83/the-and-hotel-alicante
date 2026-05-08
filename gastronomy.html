@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gastronomy · THE & HOTEL Alicante</title>
+  <meta name="description" content="Gastronomy and restaurant rituals at THE & HOTEL Alicante: breakfast cart, straight line dining room, Pizzicato Bar and Mediterranean service theatre." />
+  <link rel="canonical" href="https://juanmaes83.github.io/the-and-hotel-alicante/gastronomy.html" />
+
+  <meta property="og:title" content="Gastronomy · THE & HOTEL Alicante" />
+  <meta property="og:description" content="Mediterranean dishes arranged with military tenderness. Every plate behaves like a title sequence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juanmaes83.github.io/the-and-hotel-alicante/gastronomy.html" />
+  <meta property="og:image" content="https://juanmaes83.github.io/the-and-hotel-alicante/assets/images/gastro-breakfast-cart.png" />
+
+  <meta name="theme-color" content="#2C3E6B" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "THE & HOTEL Alicante Gastronomy",
+    "url": "https://juanmaes83.github.io/the-and-hotel-alicante/gastronomy.html",
+    "servesCuisine": ["Mediterranean", "Alicante", "Hotel Breakfast", "Cocktail Bar"],
+    "description": "Cinematic hotel gastronomy concept in Alicante with breakfast rituals, straight-line dining service and Pizzicato Bar.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/ Simetría, 12",
+      "postalCode": "03001",
+      "addressLocality": "Alicante",
+      "addressCountry": "ES"
+    }
+  }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+    :root {
+      --cream: #FFF5E1;
+      --navy: #2C3E6B;
+      --pink: #F4B6C2;
+      --mint: #A8D5BA;
+      --mustard: #F2C94C;
+      --stone: #E8D5B7;
+      --blue: #4A90D9;
+      --terracotta: #C2785C;
+      --white: #FAF7F2;
+      --ink: #17213b;
+      --red: #b84b42;
+      --mahogany: #7b3f2d;
+      --futura: Futura, "Avenir Next", "Trebuchet MS", Arial, sans-serif;
+      --courier: "Courier Prime", "Courier New", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--courier);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom: 3px solid var(--navy);
+      background: rgba(255,245,225,.94);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      min-width: 0;
+      font-family: var(--futura);
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: clamp(14px, 4vw, 22px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .button {
+      display: inline-block;
+      width: 100%;
+      border: 3px solid var(--navy);
+      background: var(--cream);
+      color: var(--navy);
+      padding: 12px 16px;
+      font-family: var(--futura);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      box-shadow: 5px 5px 0 var(--navy);
+      text-align: center;
+    }
+
+    .button.primary {
+      background: var(--mustard);
+    }
+
+    .hero {
+      min-height: 74svh;
+      display: grid;
+      align-items: end;
+      padding: 84px 16px 42px;
+      background:
+        linear-gradient(180deg, rgba(255,245,225,.22), rgba(44,62,107,.58)),
+        url("assets/images/gastro-breakfast-cart.png") center / cover no-repeat;
+      border-bottom: 4px solid var(--navy);
+    }
+
+    .hero-card {
+      width: min(920px, 100%);
+      margin: 0 auto;
+      padding: clamp(22px, 5vw, 48px);
+      border: 4px solid var(--navy);
+      background: rgba(255,245,225,.82);
+      box-shadow: 12px 12px 0 rgba(44,62,107,.20);
+      text-align: center;
+    }
+
+    .kicker {
+      margin: 0 0 10px;
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .045em;
+      color: var(--navy);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 14vw, 110px);
+      line-height: .82;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 10vw, 76px);
+      line-height: .92;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: clamp(25px, 7vw, 42px);
+      line-height: .92;
+    }
+
+    .hero-card p:last-of-type,
+    .section-head p {
+      max-width: 760px;
+      margin: 16px auto 0;
+      font-size: clamp(14px, 4vw, 18px);
+      line-height: 1.58;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: clamp(52px, 10vw, 96px) 16px;
+    }
+
+    .section-head {
+      width: min(920px, 100%);
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .gastro-grid {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .gastro-card {
+      border: 3px solid var(--navy);
+      background: rgba(255,245,225,.88);
+      box-shadow: 8px 8px 0 rgba(44,62,107,.16);
+      overflow: hidden;
+    }
+
+    .media-window {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: var(--terracotta);
+      border-bottom: 3px solid var(--navy);
+      overflow: hidden;
+    }
+
+    .media-window img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gastro-copy {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .gastro-copy p {
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .meta-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .meta-grid span {
+      border: 2px solid var(--navy);
+      background: rgba(255,249,234,.92);
+      padding: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 3px 3px 0 rgba(44,62,107,.12);
+    }
+
+    .menu-board {
+      width: min(1180px, 100%);
+      margin: 42px auto 0;
+      border: 4px solid var(--navy);
+      background: var(--mahogany);
+      color: var(--cream);
+      box-shadow: 12px 12px 0 rgba(44,62,107,.20);
+      padding: clamp(18px, 4vw, 34px);
+    }
+
+    .menu-board h2 {
+      color: var(--cream);
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .menu-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .menu-item {
+      border: 2px solid var(--cream);
+      background: rgba(255,245,225,.08);
+      padding: 14px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .menu-item strong {
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--mustard);
+    }
+
+    .menu-item span {
+      line-height: 1.45;
+    }
+
+    .rituals {
+      background: linear-gradient(180deg, var(--cream), #ffe3cd);
+      border-top: 4px solid var(--navy);
+      border-bottom: 4px solid var(--navy);
+    }
+
+    .ritual-grid {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .ritual {
+      border: 3px solid var(--navy);
+      background: #fff9ea;
+      padding: 18px;
+      box-shadow: 7px 7px 0 rgba(44,62,107,.14);
+    }
+
+    .ritual span {
+      display: grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 12px;
+      border: 3px solid var(--navy);
+      border-radius: 50%;
+      background: var(--mustard);
+      font: 900 16px/1 var(--futura);
+    }
+
+    .ritual h3 {
+      font-size: clamp(21px, 6vw, 30px);
+      margin-bottom: 8px;
+    }
+
+    .ritual p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .cta {
+      background: var(--navy);
+      color: var(--cream);
+      text-align: center;
+      border-top: 4px solid var(--mustard);
+    }
+
+    .cta h2 {
+      color: var(--cream);
+    }
+
+    .cta p {
+      max-width: 720px;
+      margin: 16px auto 24px;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 34px 16px 100px;
+      background: var(--cream);
+      color: var(--navy);
+      text-align: center;
+      border-top: 3px solid var(--navy);
+    }
+
+    .footer strong {
+      display: block;
+      font-family: var(--futura);
+      font-size: clamp(30px, 9vw, 70px);
+      line-height: .9;
+      letter-spacing: .06em;
+    }
+
+    .footer-actions {
+      margin-top: 22px;
+      display: grid;
+      gap: 12px;
+      width: min(520px, 100%);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 760px) {
+      .topbar {
+        padding: 14px 28px;
+      }
+
+      .hero {
+        min-height: 82vh;
+        padding: 110px 28px 70px;
+      }
+
+      .gastro-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .gastro-copy {
+        padding: 22px;
+      }
+
+      .menu-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .ritual-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .footer-actions {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1120px) {
+      .media-window {
+        aspect-ratio: 4 / 3;
+      }
+
+      .gastro-card {
+        display: grid;
+        grid-template-rows: auto 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">THE & HOTEL · Alicante</a>
+    <a class="button primary" href="index.html#book">Book</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <p class="kicker">Chapter V · Gastronomy</p>
+        <h1>Gastronomy</h1>
+        <p>Mediterranean dishes arranged with military tenderness. Every plate behaves like a title sequence.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="kicker">Restaurant Rituals</p>
+        <h2>Three edible scenes.</h2>
+        <p>The gastronomic system works as a commercial experience: breakfast, dining room and bar become bookable reasons to stay longer.</p>
+      </div>
+
+      <div class="gastro-grid">
+        <article class="gastro-card">
+          <div class="media-window">
+            <img src="assets/images/gastro-breakfast-cart.png" alt="Breakfast Cart editorial image" loading="lazy">
+          </div>
+          <div class="gastro-copy">
+            <h3>Breakfast Cart</h3>
+            <p>Coffee, citrus, cake, symmetry. A morning ritual designed to make the first meal feel like a small production.</p>
+            <div class="meta-grid">
+              <span>Best time: 08:15</span>
+              <span>Use case: direct booking benefit</span>
+              <span>Guest value: memorable start</span>
+            </div>
+            <a class="button" href="index.html#book">Request breakfast ritual</a>
+          </div>
+        </article>
+
+        <article class="gastro-card">
+          <div class="media-window">
+            <img src="assets/images/gastro-straight-line-room.png" alt="The Straight Line Room editorial image" loading="lazy">
+          </div>
+          <div class="gastro-copy">
+            <h3>The Straight Line Room</h3>
+            <p>Dining service with dolly-rail discipline. Waiters move with purpose, plates arrive like planned camera cues.</p>
+            <div class="meta-grid">
+              <span>Best time: lunch / dinner</span>
+              <span>Use case: couples, VIPs, events</span>
+              <span>Guest value: service theatre</span>
+            </div>
+            <a class="button" href="index.html#book">Request dining protocol</a>
+          </div>
+        </article>
+
+        <article class="gastro-card">
+          <div class="media-window">
+            <img src="assets/images/gastro-pizzicato-bar.png" alt="Pizzicato Bar editorial image" loading="lazy">
+          </div>
+          <div class="gastro-copy">
+            <h3>Pizzicato Bar</h3>
+            <p>One cocktail, two olives, three emotional pauses. The bar exists for guests who understand timing.</p>
+            <div class="meta-grid">
+              <span>Best time: blue hour</span>
+              <span>Use case: aperitif, launch, private dinner</span>
+              <span>Guest value: evening ritual</span>
+            </div>
+            <a class="button" href="index.html#book">Request bar ritual</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-board">
+        <h2>Menu as a small screenplay.</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <strong>Act I · Morning</strong>
+            <span>Orange, coffee, cake, toast and one folded napkin with excessive confidence.</span>
+          </div>
+          <div class="menu-item">
+            <strong>Act II · Noon</strong>
+            <span>Market vegetables, Mediterranean fish, olive oil and a straight-line service rhythm.</span>
+          </div>
+          <div class="menu-item">
+            <strong>Act III · Evening</strong>
+            <span>Pizzicato cocktails, small plates, quiet lighting and calibrated silence.</span>
+          </div>
+          <div class="menu-item">
+            <strong>Act IV · Private Table</strong>
+            <span>A room, a cake, a record player and a dinner that behaves like a scene.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rituals">
+      <div class="section-head">
+        <p class="kicker">Commercial Logic</p>
+        <h2>Why it helps conversion.</h2>
+        <p>Gastronomy is not decorative here. It gives the guest more reasons to book direct, upgrade and stay inside the hotel universe.</p>
+      </div>
+
+      <div class="ritual-grid">
+        <article class="ritual">
+          <span>01</span>
+          <h3>Direct booking hook</h3>
+          <p>Breakfast cake becomes a visible benefit for guests who book through the hotel.</p>
+        </article>
+
+        <article class="ritual">
+          <span>02</span>
+          <h3>Upsell moment</h3>
+          <p>Bar and dinner rituals create simple premium add-ons before arrival.</p>
+        </article>
+
+        <article class="ritual">
+          <span>03</span>
+          <h3>Event support</h3>
+          <p>The restaurant system supports brand events, private dinners and small celebrations.</p>
+        </article>
+
+        <article class="ritual">
+          <span>04</span>
+          <h3>Content value</h3>
+          <p>Every plate and cart is built to be photographed without feeling like a generic hotel buffet.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <p class="kicker">Final Course</p>
+      <h2>Book the room. Add the ritual.</h2>
+      <p>The booking form lives on the main landing so all requests stay centralized and easy to maintain.</p>
+      <a class="button primary" href="index.html#book">Request a gastronomy ritual</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>THE & HOTEL</strong>
+    <p>Alicante · Where Symmetry Is Policy</p>
+    <div class="footer-actions">
+      <a class="button" href="index.html">Back to main landing</a>
+      <a class="button primary" href="index.html#book">Request a key</a>
+    </div>
+  </footer>
+</body>
+</html>

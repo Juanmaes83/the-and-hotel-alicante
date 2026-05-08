@@ -1,0 +1,786 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Local Experiences · THE & HOTEL Alicante</title>
+  <meta name="description" content="Bookable local experiences by THE & HOTEL Alicante: Castle at 07:07, Explanada Walk, Mercado Breakfast and Sunset Postcard Ritual." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://juanmaes83.github.io/the-and-hotel-alicante/experiences.html" />
+
+  <meta property="og:title" content="Local Experiences · THE & HOTEL Alicante" />
+  <meta property="og:description" content="Sunrise castle walks, Explanada choreography, market breakfasts and postcard sunsets in Alicante." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juanmaes83.github.io/the-and-hotel-alicante/experiences.html" />
+  <meta property="og:image" content="https://juanmaes83.github.io/the-and-hotel-alicante/assets/images/experience-castle-0707.png" />
+
+  <meta name="theme-color" content="#2C3E6B" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "THE & HOTEL Alicante Local Experiences",
+    "description": "Bookable local experiences in Alicante connected to THE & HOTEL: castle, Explanada, market and sunset postcard rituals.",
+    "url": "https://juanmaes83.github.io/the-and-hotel-alicante/experiences.html",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Castillo de Santa Bárbara",
+        "url": "https://juanmaes83.github.io/the-and-hotel-alicante/alicante.html#castle"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Playa del Postiguet",
+        "url": "https://juanmaes83.github.io/the-and-hotel-alicante/alicante.html#postiguet"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Explanada de España",
+        "url": "https://juanmaes83.github.io/the-and-hotel-alicante/alicante.html#explanada"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Mercado Central de Alicante",
+        "url": "https://juanmaes83.github.io/the-and-hotel-alicante/alicante.html#market"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Casco Antiguo de Alicante",
+        "url": "https://juanmaes83.github.io/the-and-hotel-alicante/alicante.html#oldtown"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+    :root {
+      --cream: #FFF5E1;
+      --navy: #2C3E6B;
+      --pink: #F4B6C2;
+      --mint: #A8D5BA;
+      --mustard: #F2C94C;
+      --stone: #E8D5B7;
+      --blue: #4A90D9;
+      --terracotta: #C2785C;
+      --white: #FAF7F2;
+      --ink: #17213b;
+      --red: #b84b42;
+      --mahogany: #7b3f2d;
+      --futura: Futura, "Avenir Next", "Trebuchet MS", Arial, sans-serif;
+      --courier: "Courier Prime", "Courier New", monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--courier);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 16px;
+      border-bottom: 3px solid var(--navy);
+      background: rgba(255,245,225,.94);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      min-width: 0;
+      font-family: var(--futura);
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: clamp(14px, 4vw, 22px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .button {
+      display: inline-block;
+      width: 100%;
+      border: 3px solid var(--navy);
+      background: var(--cream);
+      color: var(--navy);
+      padding: 12px 16px;
+      font-family: var(--futura);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      box-shadow: 5px 5px 0 var(--navy);
+      text-align: center;
+    }
+
+    .button.primary {
+      background: var(--mustard);
+    }
+
+    .hero {
+      min-height: 74svh;
+      display: grid;
+      align-items: end;
+      padding: 84px 16px 42px;
+      background:
+        linear-gradient(180deg, rgba(44,62,107,.10), rgba(44,62,107,.64)),
+        url("assets/images/experience-castle-0707.png") center / cover no-repeat;
+      border-bottom: 4px solid var(--navy);
+    }
+
+    .hero-card {
+      width: min(960px, 100%);
+      margin: 0 auto;
+      padding: clamp(22px, 5vw, 48px);
+      border: 4px solid var(--navy);
+      background: rgba(255,245,225,.84);
+      box-shadow: 12px 12px 0 rgba(44,62,107,.20);
+      text-align: center;
+    }
+
+    .kicker {
+      margin: 0 0 10px;
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .045em;
+      color: var(--navy);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 14vw, 110px);
+      line-height: .82;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(34px, 10vw, 76px);
+      line-height: .92;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: clamp(25px, 7vw, 42px);
+      line-height: .92;
+    }
+
+    .hero-card p:last-of-type,
+    .section-head p {
+      max-width: 760px;
+      margin: 16px auto 0;
+      font-size: clamp(14px, 4vw, 18px);
+      line-height: 1.58;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: clamp(52px, 10vw, 96px) 16px;
+    }
+
+    .section-head {
+      width: min(920px, 100%);
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .route-map {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      border: 4px solid var(--navy);
+      background:
+        radial-gradient(circle at 18% 28%, rgba(232,213,183,.9) 0 72px, transparent 73px),
+        radial-gradient(circle at 58% 72%, rgba(74,144,217,.36) 0 170px, transparent 171px),
+        linear-gradient(135deg, #dcebff, var(--cream));
+      box-shadow: 12px 12px 0 rgba(44,62,107,.18);
+      padding: clamp(16px, 4vw, 28px);
+      display: grid;
+      gap: 18px;
+    }
+
+    .map-stage {
+      position: relative;
+      min-height: 520px;
+      border: 3px solid var(--navy);
+      background:
+        repeating-linear-gradient(0deg, rgba(44,62,107,.07) 0 2px, transparent 2px 62px),
+        repeating-linear-gradient(90deg, rgba(44,62,107,.07) 0 2px, transparent 2px 62px),
+        rgba(255,245,225,.48);
+      overflow: hidden;
+    }
+
+    .map-stage::before {
+      content: "ALICANTE ROUTE · CARLOS VERIFIED";
+      position: absolute;
+      left: 14px;
+      top: 14px;
+      z-index: 4;
+      border: 2px solid var(--navy);
+      background: var(--mustard);
+      padding: 7px 10px;
+      font: 900 11px/1 var(--futura);
+      letter-spacing: .08em;
+    }
+
+    .map-line {
+      position: absolute;
+      left: 9%;
+      right: 8%;
+      top: 50%;
+      height: 16px;
+      transform: translateY(-50%) rotate(-7deg);
+      background: var(--mustard);
+      border: 3px solid var(--navy);
+      border-radius: 999px;
+      box-shadow: 0 0 0 10px rgba(255,245,225,.55);
+    }
+
+    .map-dot {
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: 4px solid var(--navy);
+      background: var(--cream);
+      display: grid;
+      place-items: center;
+      font-family: var(--futura);
+      font-weight: 900;
+      font-size: 10px;
+      color: var(--navy);
+      cursor: pointer;
+      box-shadow: 6px 6px 0 rgba(44,62,107,.18);
+    }
+
+    .map-dot.is-selected,
+    .map-dot:hover {
+      background: var(--mustard);
+      transform: scale(1.08);
+    }
+
+    .map-dot-castle { left: 8%; top: 24%; background: var(--stone); }
+    .map-dot-postiguet { left: 20%; top: 68%; background: var(--blue); color: white; }
+    .map-dot-explanada { left: 31%; top: 43%; background: var(--cream); }
+    .map-dot-market { left: 53%; top: 34%; background: var(--terracotta); }
+    .map-dot-oldtown { left: 64%; top: 57%; background: var(--pink); }
+    .map-dot-hotel { left: 76%; top: 42%; background: var(--mint); }
+
+    .map-detail {
+      border: 3px solid var(--navy);
+      background: #fff9ea;
+      padding: clamp(18px, 4vw, 26px);
+      box-shadow: 8px 8px 0 rgba(44,62,107,.14);
+      display: grid;
+      gap: 14px;
+    }
+
+    .map-detail h3 {
+      font-size: clamp(30px, 7vw, 54px);
+    }
+
+    .map-detail p {
+      margin: 0;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+
+    .fact-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .fact {
+      border: 2px solid var(--navy);
+      background: var(--cream);
+      padding: 12px;
+      box-shadow: 4px 4px 0 rgba(44,62,107,.12);
+    }
+
+    .fact strong {
+      display: block;
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: var(--red);
+    }
+
+    .route-grid {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .route-card {
+      border: 3px solid var(--navy);
+      background: rgba(255,245,225,.9);
+      box-shadow: 8px 8px 0 rgba(44,62,107,.16);
+      overflow: hidden;
+    }
+
+    .media-window {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: var(--blue);
+      border-bottom: 3px solid var(--navy);
+      overflow: hidden;
+    }
+
+    .media-window img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .route-copy {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .route-copy p {
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .meta-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .meta-grid span {
+      border: 2px solid var(--navy);
+      background: rgba(255,249,234,.92);
+      padding: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.35;
+      box-shadow: 3px 3px 0 rgba(44,62,107,.12);
+    }
+
+    .carlos-board {
+      background: var(--navy);
+      color: var(--cream);
+      text-align: center;
+      border-top: 4px solid var(--mustard);
+      border-bottom: 4px solid var(--mustard);
+    }
+
+    .carlos-board h2 {
+      color: var(--cream);
+    }
+
+    .rules-grid {
+      width: min(1180px, 100%);
+      margin: 32px auto 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .rule {
+      border: 2px solid var(--cream);
+      background: rgba(255,245,225,.08);
+      padding: 16px;
+      text-align: left;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    .rule strong {
+      display: block;
+      color: var(--mustard);
+      font-family: var(--futura);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 6px;
+    }
+
+    .cta {
+      background: linear-gradient(180deg, var(--cream), #dcebff);
+      text-align: center;
+    }
+
+    .cta p {
+      max-width: 720px;
+      margin: 16px auto 24px;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+
+    .footer {
+      padding: 34px 16px 100px;
+      background: var(--cream);
+      color: var(--navy);
+      text-align: center;
+      border-top: 3px solid var(--navy);
+    }
+
+    .footer strong {
+      display: block;
+      font-family: var(--futura);
+      font-size: clamp(30px, 9vw, 70px);
+      line-height: .9;
+      letter-spacing: .06em;
+    }
+
+    .footer-actions {
+      margin-top: 22px;
+      display: grid;
+      gap: 12px;
+      width: min(520px, 100%);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 760px) {
+      .topbar {
+        padding: 14px 28px;
+      }
+
+      .hero {
+        min-height: 82vh;
+        padding: 110px 28px 70px;
+      }
+
+      .route-map {
+        grid-template-columns: 1.15fr .85fr;
+        align-items: stretch;
+      }
+
+      .map-stage {
+        min-height: 560px;
+      }
+
+      .route-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .rules-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .footer-actions {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1120px) {
+      .route-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .media-window {
+        aspect-ratio: 4 / 3;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">THE & HOTEL · Alicante</a>
+    <a class="button primary" href="index.html#book">Book</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <p class="kicker">Chapter VIII · Local Experiences</p>
+        <h1>Experiences</h1>
+        <p>Sunrise castle walks, Explanada choreography, market breakfasts and postcard sunsets. Alicante, but properly staged.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="kicker">Bookable Rituals</p>
+        <h2>Four ways to enter Alicante.</h2>
+        <p>This page turns local experiences into clear commercial products: duration, value, ritual and direct booking intent.</p>
+      </div>
+
+      <div class="route-map">
+        <div class="map-stage" aria-label="Interactive Alicante route map">
+          <div class="map-line"></div>
+          <button class="map-dot map-dot-castle is-selected" type="button" data-place="castle" aria-pressed="true">CAST</button>
+          <button class="map-dot map-dot-postiguet" type="button" data-place="postiguet" aria-pressed="false">SEA</button>
+          <button class="map-dot map-dot-explanada" type="button" data-place="explanada" aria-pressed="false">EXPL</button>
+          <button class="map-dot map-dot-market" type="button" data-place="market" aria-pressed="false">MKT</button>
+          <button class="map-dot map-dot-oldtown" type="button" data-place="oldtown" aria-pressed="false">OLD</button>
+          <button class="map-dot map-dot-hotel" type="button" data-place="hotel" aria-pressed="false">HOTEL</button>
+        </div>
+
+        <aside class="map-detail" aria-live="polite">
+          <p class="kicker">Carlos’ Local File</p>
+          <h3 id="placeTitle">Castillo de Santa Bárbara</h3>
+          <p id="placeIntro">The opening shot of Alicante. Stone, height and excellent behaviour at sunrise.</p>
+
+          <div class="fact-grid">
+            <div class="fact">
+              <strong>Distance from hotel</strong>
+              <span id="placeDistance">1.4 km · 18 min walk</span>
+            </div>
+            <div class="fact">
+              <strong>Best time to visit</strong>
+              <span id="placeTime">07:07 · before the city starts improvising</span>
+            </div>
+            <div class="fact">
+              <strong>Hotel ritual</strong>
+              <span id="placeRitual">Castle at 07:07 with breakfast cake on return.</span>
+            </div>
+            <div class="fact">
+              <strong>Carlos recommends</strong>
+              <span id="placeCarlos">Arrive before sunset. The castle behaves better in golden light.</span>
+            </div>
+          </div>
+
+          <a class="button primary" href="index.html#book">Request this route</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="kicker">Local Experience Catalogue</p>
+        <h2>Four bookable rituals.</h2>
+        <p>Each experience is designed as a simple sellable product: easy to explain, easy to book and easy to remember.</p>
+      </div>
+
+      <div class="route-grid">
+        <article class="route-card" id="castle">
+          <div class="media-window">
+            <img src="assets/images/experience-castle-0707.png" alt="Castle at 07:07 local experience image" loading="lazy">
+          </div>
+          <div class="route-copy">
+            <h3>Castle at 07:07</h3>
+            <p>A climb timed with the opening credits of the day.</p>
+            <div class="meta-grid">
+              <span>90 min · sunrise route</span>
+              <span>Includes: coffee, cake return, Carlos’ map</span>
+              <span>From 45€/guest</span>
+            </div>
+            <a class="button" href="index.html#book">Request experience</a>
+          </div>
+        </article>
+
+        <article class="route-card" id="explanada">
+          <div class="media-window">
+            <img src="assets/images/experience-explanada-walk.png" alt="Explanada Walk local experience image" loading="lazy">
+          </div>
+          <div class="route-copy">
+            <h3>Explanada Walk</h3>
+            <p>A straight-line ritual through Alicante’s most cinematic pavement.</p>
+            <div class="meta-grid">
+              <span>60 min · golden hour</span>
+              <span>Includes: pink balloon photo stop</span>
+              <span>From 30€/guest</span>
+            </div>
+            <a class="button" href="index.html#book">Request experience</a>
+          </div>
+        </article>
+
+        <article class="route-card" id="market">
+          <div class="media-window">
+            <img src="assets/images/experience-mercado-breakfast.png" alt="Mercado Breakfast local experience image" loading="lazy">
+          </div>
+          <div class="route-copy">
+            <h3>Mercado Breakfast</h3>
+            <p>Citrus, salt, pastry, local gossip and a very exact napkin fold.</p>
+            <div class="meta-grid">
+              <span>75 min · morning table</span>
+              <span>Includes: market tasting route</span>
+              <span>From 38€/guest</span>
+            </div>
+            <a class="button" href="index.html#book">Request experience</a>
+          </div>
+        </article>
+
+        <article class="route-card" id="postiguet">
+          <div class="media-window">
+            <img src="assets/images/experience-sunset-postcard-ritual.png" alt="Sunset Postcard Ritual local experience image" loading="lazy">
+          </div>
+          <div class="route-copy">
+            <h3>Sunset Postcard Ritual</h3>
+            <p>A blue-hour walk ending with a handwritten postcard from the hotel desk.</p>
+            <div class="meta-grid">
+              <span>80 min · sunset route</span>
+              <span>Includes: postcard, stamp and sea view</span>
+              <span>From 42€/guest</span>
+            </div>
+            <a class="button" href="index.html#book">Request experience</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section carlos-board" id="oldtown">
+      <div class="section-head">
+        <p class="kicker">Carlos’ Route Rules</p>
+        <h2>How to behave in Alicante.</h2>
+        <p>Local guidance, but with enough personality to make the hotel feel like a world, not just a booking page.</p>
+      </div>
+
+      <div class="rules-grid">
+        <div class="rule">
+          <strong>01 · Start high</strong>
+          The castle gives the day structure. Alicante looks better when introduced from above.
+        </div>
+        <div class="rule">
+          <strong>02 · Walk straight</strong>
+          The Explanada already has movement. The guest only needs to enter the rhythm.
+        </div>
+        <div class="rule">
+          <strong>03 · Return slowly</strong>
+          A route should end at the hotel desk, not inside a generic platform tab.
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <p class="kicker">Local Route Conversion</p>
+      <h2>Explore the city. Return to the key.</h2>
+      <p>The booking form lives on the main landing so every route, suite, package and event request stays centralized.</p>
+      <a class="button primary" href="index.html#book">Request local experience</a>
+    </section>
+  </main>
+
+  <footer class="footer" id="hotel">
+    <strong>THE & HOTEL</strong>
+    <p>Alicante · Where Symmetry Is Policy</p>
+    <div class="footer-actions">
+      <a class="button" href="index.html">Back to main landing</a>
+      <a class="button primary" href="index.html#book">Request a key</a>
+    </div>
+  </footer>
+
+  <script>
+    const places = {
+      castle: {
+        title: "Castillo de Santa Bárbara",
+        intro: "The opening shot of Alicante. Stone, height and excellent behaviour at sunrise.",
+        distance: "1.4 km · 18 min walk",
+        time: "07:07 · before the city starts improvising",
+        ritual: "Castle at 07:07 with breakfast cake on return.",
+        carlos: "Arrive before sunset. The castle behaves better in golden light."
+      },
+      postiguet: {
+        title: "Playa del Postiguet",
+        intro: "Mediterranean blue within walking distance. Ideal for slow travellers and symmetrical towels.",
+        distance: "650 m · 8 min walk",
+        time: "Blue hour · when the sea looks art-directed",
+        ritual: "Postiguet Blue route with postcard stop.",
+        carlos: "Do not rush the sea. It notices."
+      },
+      explanada: {
+        title: "Explanada de España",
+        intro: "The hotel’s visual cousin: rhythm, tiles and a pavement that thinks in tracking shots.",
+        distance: "450 m · 6 min walk",
+        time: "Golden hour · when the waves on the floor behave best",
+        ritual: "Explanada Walk with pink balloon moment.",
+        carlos: "Walk straight. The mosaic will do the dancing."
+      },
+      market: {
+        title: "Mercado Central",
+        intro: "A morning scene of citrus, salt, pastry and local dialogue in excellent proportions.",
+        distance: "900 m · 12 min walk",
+        time: "09:15 · after coffee, before decisions",
+        ritual: "Mercado Breakfast with folded napkin protocol.",
+        carlos: "Order oranges first. They set the tone."
+      },
+      oldtown: {
+        title: "Casco Antiguo",
+        intro: "Terracotta corners, theatrical stairs and small streets that behave like set design.",
+        distance: "500 m · 7 min walk",
+        time: "Late afternoon · when balconies start whispering",
+        ritual: "Barrio Deluxe route with miniature balcony scene.",
+        carlos: "Look up. Alicante hides its best lines above eye level."
+      },
+      hotel: {
+        title: "THE & HOTEL",
+        intro: "The final wipe: lobby pink, bellboy cream and a reception desk trained in symmetry.",
+        distance: "0 m · already aligned",
+        time: "Anytime Carlos is awake. So, always.",
+        ritual: "Reserve your key and let the corridor choose you.",
+        carlos: "Return before the bell rings twice. Three times means cake."
+      }
+    };
+
+    const fields = {
+      title: document.getElementById("placeTitle"),
+      intro: document.getElementById("placeIntro"),
+      distance: document.getElementById("placeDistance"),
+      time: document.getElementById("placeTime"),
+      ritual: document.getElementById("placeRitual"),
+      carlos: document.getElementById("placeCarlos")
+    };
+
+    document.querySelectorAll(".map-dot").forEach((dot) => {
+      dot.addEventListener("click", () => {
+        const place = dot.dataset.place;
+        const data = places[place];
+        if (!data) return;
+
+        fields.title.textContent = data.title;
+        fields.intro.textContent = data.intro;
+        fields.distance.textContent = data.distance;
+        fields.time.textContent = data.time;
+        fields.ritual.textContent = data.ritual;
+        fields.carlos.textContent = data.carlos;
+
+        document.querySelectorAll(".map-dot").forEach((item) => {
+          item.classList.remove("is-selected");
+          item.setAttribute("aria-pressed", "false");
+        });
+
+        dot.classList.add("is-selected");
+        dot.setAttribute("aria-pressed", "true");
+      });
+    });
+  </script>
+</body>
+</html>
+

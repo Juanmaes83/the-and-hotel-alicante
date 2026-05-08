@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://juanmaes83.github.io/the-and-hotel-alicante/sitemap.xml
